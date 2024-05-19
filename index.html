@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<div class="wrapper">
+    <div class="filter-wrapper">
+        <h3>Filter those markers: </h3>
+        <div class="filter-select">
+            <select class="filter filter-city">
+                <option value="all">All</option>
+                <option value="gaza">Gaza</option>
+                <option value="fish">fish</option>
+                <option value="dog">dog</option>
+                <option value="cat">cat</option>
+            </select>
+
+            <select class="filter filter-category">
+                <option value="all">All</option>
+                <option value="coca">coca</option>
+                <option value="fanta">fanta</option>
+            </select>
+
+            <select class="filter filter-name">
+                <option value="all">All</option>
+                <option value="sandrine">sandrine</option>
+                <option value="lea">lea</option>
+                <option value="paul">paul</option>
+            </select>
+        </div>
+
+        <div id="searchMap">
+            <h3>Search for a place
+                <small>(Existing value are: gaza,cat, fish, dog, sandrine, lea, paul, fanta, coca.)</small>
+            </h3>
+            <input class="typeahead" type="text" placeholder="Search for...">
+        </div>
+
+        <div class="alert">There is no result for your current search</div>
+
+        <button id="resetFilter"> Reset</button>
+    </div>
+
+    <div id="map"></div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+<script src="index.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>
